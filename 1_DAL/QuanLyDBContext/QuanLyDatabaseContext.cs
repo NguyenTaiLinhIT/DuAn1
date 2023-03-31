@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace _1_DAL.QuanLyDBContext
 {
-    public class QuanLyDatabaseContext :DbContext
+    public class QuanLyDatabaseContext : DbContext
     {
         public QuanLyDatabaseContext()
         {
@@ -21,17 +21,17 @@ namespace _1_DAL.QuanLyDBContext
         {
 
         }
-        public  DbSet<DichVu> dichVus { get; set; }
-        public  DbSet<HangDT> hangDTs { get; set; }
-        public  DbSet<HoaDon> hoaDons { get; set; }
-        public  DbSet<HoaDonCT> hoaDonCTs { get; set; }
-        public  DbSet<KhuyenMai> khuyenMais { get; set; }
-        public  DbSet<LoaiDT> loaiDTs { get; set; }
-        public  DbSet<NhaCungCap> nhaCungCaps { get; set; }
-        public  DbSet<NhaCungCapCT> nhaCungCapCTs { get; set; }
-        public  DbSet<NhanVien> nhanViens { get; set; }
-        public  DbSet<SanPham> sanPhams   { get; set; }
-        
+        public DbSet<DichVu> dichVus { get; set; }
+        public DbSet<HangDT> hangDTs { get; set; }
+        public DbSet<HoaDon> hoaDons { get; set; }
+        public DbSet<HoaDonCT> hoaDonCTs { get; set; }
+        public DbSet<KhuyenMai> khuyenMais { get; set; }
+        public DbSet<LoaiDT> loaiDTs { get; set; }
+        public DbSet<NhaCungCap> nhaCungCaps { get; set; }
+        public DbSet<NhaCungCapCT> nhaCungCapCTs { get; set; }
+        public DbSet<NhanVien> nhanViens { get; set; }
+        public DbSet<SanPham> sanPhams { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Data Source=ANTHONYPC\SQLEXPRESS;Initial Catalog=du_an_01;Integrated Security=True");

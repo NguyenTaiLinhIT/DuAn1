@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace _3_PL
 {
-    public partial class frmNhanVien : Form
+    public partial class FrmBanHang : Form
     {
-        public frmNhanVien()
+        public FrmBanHang()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void FrmBanHang_Load(object sender, EventArgs e)
         {
 
         }
