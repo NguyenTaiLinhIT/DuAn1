@@ -21,5 +21,20 @@ namespace _3_PL
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+                 }
+
+        private void btnQuanLyCuaHang_Click(object sender, EventArgs e)
+        {
+            frmHang hang = new frmHang();
+            hang= plChuaTatCaForm.Show();
+        }
+
+        private void plChuaTatCaForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
