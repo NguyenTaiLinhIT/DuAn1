@@ -15,6 +15,7 @@ namespace _3_PL
         public FrmBanHang()
         {
             InitializeComponent();
+            Panel plChuaTatCaForm = new Panel();
         }
 
         private void FrmBanHang_Load(object sender, EventArgs e)
@@ -24,12 +25,17 @@ namespace _3_PL
 
         private void button2_Click(object sender, EventArgs e)
         {
-                 }
+        }
 
         private void btnQuanLyCuaHang_Click(object sender, EventArgs e)
         {
-            frmHang hang = new frmHang();
-            hang= plChuaTatCaForm.Show();
+            frmHang frmHang = new frmHang();
+            frmHang.TopLevel = false;
+            frmHang.Dock = DockStyle.Fill;
+            frmHang.TopMost = true;
+            frmHang.FormBorderStyle = FormBorderStyle.None;
+            plChuaTatCaForm.Controls.Add(frmHang);
+            frmHang.Show();
         }
 
         private void plChuaTatCaForm_Paint(object sender, PaintEventArgs e)
